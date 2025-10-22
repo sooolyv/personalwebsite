@@ -206,3 +206,84 @@ nav ul li.active {
         font-size: 0.9rem;
     }
 }
+
+/* Sección de cuidado de mascotas */
+.care-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+.care-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+}
+
+.care-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.care-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.care-content h4 {
+    color: #68b36b;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.care-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.care-content h2 .highlight {
+    color: #f26a2e;
+}
+
+.care-content p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.care-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 500;
+    color: #333;
+}
+
+.feature-item img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .care-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature-item {
+        justify-content: center;
+    }
+}
+
